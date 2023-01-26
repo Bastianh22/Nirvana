@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Nirvana';
+  font-family: 'Poppins' sans-serif;
   box-sizing: border-box;
 }
 
@@ -10,7 +12,7 @@ html {
 }
 
 body {
-  background: #080808;
+  /* background: #080808; */
   color: #fff;
 }
 
@@ -19,13 +21,13 @@ body {
 #header {
   /* width: 100vw; */
   height: 100vh;
-  background-image: url('./images/background2.jpg');
+  background-image: url('./images/background3.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .container {
-  padding: 10px 10%;
+  padding: 10px 5%;
 }
 
 nav {
@@ -53,6 +55,7 @@ nav ul .header-icon {
 }
 
 nav ul li a {
+  font-family: 'Nirvana';
   color: #fff;
   text-decoration: none;
   font-size: 26px;
@@ -72,6 +75,13 @@ nav ul li .icon {
 .header-text h1 {
   font-size: 80px;
   margin-top: 20px;
+}
+
+/* main */
+.main {
+  height: 100%;
+  background: linear-gradient(black, #0F70BD, #FFFCDD);
+
 }
 
 /* Biographie */
@@ -101,12 +111,15 @@ nav ul li .icon {
 }
 
 .sub-title {
+  font-family: 'Nirvana';
   font-size: 60px;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 600;
   color: #fff;
 }
+
+/* Discographie */
 
 .tab-titles {
   display: flex;
@@ -116,7 +129,6 @@ nav ul li .icon {
 .tab-links {
   margin: 30px;
   font-size: 22px;
-  letter-spacing: 1px;
   font-weight: 500;
   cursor: pointer;
   position: relative;
@@ -126,7 +138,7 @@ nav ul li .icon {
   content: '';
   width: 0;
   height: 3px;
-  background: #ff004f;
+  background: #821916;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -145,12 +157,16 @@ nav ul li .icon {
   display: block;
 }
 
-.albums {
+/* .albums {
   display: flex;
+} */
+.card {
+  background: none;
+  border: none
 }
 
 .albums .album {
-  display: flex;
+  display: inline-block;
   align-items: center;
   flex-wrap: wrap;
   margin: 10px;
@@ -158,7 +174,18 @@ nav ul li .icon {
 
 .tab-contents img {
   display: inline-block;
-  width: 150px;
+  width: 220px;
+}
+
+.info {
+  text-align: center;
+  color: black;
+  white-space: normal;
+  font-size: 14px;
+}
+
+.info h3 {
+  font-size: 20px;
 }
 
 /* Videos */
@@ -187,13 +214,75 @@ nav ul li .icon {
   text-align: center;
   padding: 25px 0;
   background: #262626;
-  margin-top: 20px;
 }
 
 .footer p {
   font-size: 22px;
   letter-spacing: 1px;
   font-weight: 300;
+}
+
+
+/* video 2 */
+.slider-box {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-height: 850px;
+}
+
+.main-slider {
+  position: relative;
+  width: 1000px;
+  padding-top: 320px;
+  margin: 20px auto;
+  box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.8);
+}
+
+.main-slider img {
+  width: 100%;
+}
+
+.main-slider .imgcheck {
+  width: 100px;
+}
+
+.main-slider>video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all .6s;
+}
+
+.main-slider input[name='ani'] {
+  display: none;
+}
+
+.main-slider label {
+  margin: 0px 0 0 20px;
+  border: 2px solid #888;
+  float: left;
+  cursor: pointer;
+  transition: all .6s;
+  opacity: 0.8;
+}
+
+.main-slider label img {
+  display: block;
+}
+
+.main-slider input[name='ani']:checked+label {
+  border-color: #777;
+  opacity: 1;
+}
+
+.main-slider input[name='ani']~video {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.main-slider input[name='ani']:checked+label+video {
+  opacity: 1;
+  transform: scale(1);
 }
 
 
@@ -207,11 +296,11 @@ nav .fas {
 
   /* header */
   #header {
-    background-image: url('./images/phone-background.png');
+    background-image: url('./images/phone-background2.png');
   }
 
   .header-text {
-    margin-top: 100%;
+    margin-top: 110%;
     font-size: 16px;
   }
 
@@ -225,7 +314,7 @@ nav .fas {
   }
 
   nav ul {
-    background: #ff004f;
+    background: #0F70BD;
     position: fixed;
     top: 0;
     right: -170px;
@@ -272,8 +361,13 @@ nav .fas {
     font-size: 14px;
   }
 
+  /* discographie */
   .tab-links{
-    font-size: 16px;
-    margin-right: 20px;
+    font-size: 23px;
+    margin: 15px 10px;
+  }
+
+  .tab-contents img {
+    width: 130px;
   }
 }
