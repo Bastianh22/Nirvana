@@ -24,16 +24,13 @@ function closeMenu() {
 }
 
 function afficher_cacher() {
-  console.log('bonjour')
   bouton = document.getElementById('bouton_texte');
   texte = document.getElementById('texte');
   if (texte.style.display == "block") {
-    console.log('au revoir2')
     texte.style.display = "none";
     bouton.innerHTML = 'Voir plus';
   }
   else {
-    console.log('au revoir')
     texte.style.display = "block";
     bouton.innerHTML = 'Voir moins';
   }
