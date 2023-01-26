@@ -157,6 +157,20 @@ nav ul li .icon {
   display: block;
 }
 
+.texte {
+  display: none;
+}
+
+.bouton
+{
+    background-color: #ababab;
+    padding: 7px;
+    border-radius: 15px;
+    font-size:22px;
+    color: #262626;
+    cursor:pointer;
+}
+
 /* .albums {
   display: flex;
 } */
