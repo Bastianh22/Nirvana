@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="styles.css">
+  <title>Nirvana</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="./images/logo.png" alt="logo" class="logo">
+        <ul id="sideMenu">
+          <li class="header-link"><a href="#header">Accueil</a></li>
+          <li class="header-link"><a href="#biographie">Biographie</a></li>
+          <li class="header-link"><a href="#">Vidéos</a></li>
+          <li class="header-icon">
+            <a href="https://www.facebook.com/Nirvana">
+              <img src="./images/facebook.png" alt="icon facebook" class="icon">
+            </a>
+            <a href="https://twitter.com/Nirvana">
+              <img src="./images/twitter.png" alt="icon twitter" class="icon">
+            </a>
+            <a href="https://www.youtube.com/channel/UCFMZHIQMgBXTSxsr86Caazw">
+              <img src="./images/youtube.png" alt="icon youtube" class="icon">
+            </a>
+          </li>
+          <i class="fas fa-times" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openMenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>UI/UX Designer</p>
+        <h1>Hi, I'm Nirvana</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- Biographie -->
+  <div id="biographie">
+    <div class="container">
+      <!-- row-cols-1 row-cols-md-2 g-4 -->
+      <div class="align-div">
+        <!-- col -->
+        <div class="bio-col-1">
+          <img src="./images/nirvana_groupe.jpg" alt="">
+        </div>
+        <!-- col -->
+        <div class="bio-col-2">
+          <h1 class="sub-title">Biographie</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nemo dignissimos qui nesciunt nihil ex,
+            repudiandae molestiae facilis nostrum, maiores dolorem corporis temporibus mollitia autem fugit accusantium
+            natus est molestias! Neque consequuntur debitis, animi consectetur at necessitatibus incidunt natus,
+            adipisci repellat vero mollitia, aspernatur error nobis ex praesentium vitae minima. Omnis, suscipit
+            architecto? Tempora qui fugit molestias, atque sit nobis, numquam voluptatum perferendis laborum non optio
+            natus, quia esse pariatur!
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="openTab('album')">Album</p>
+            <p class="tab-links" onclick="openTab('deluxe')">Deluxe</p>
+            <p class="tab-links" onclick="openTab('remastered')">Remastered</p>
+          </div>
+          <div class="tab-contents active-tab" id="album">
+            <div class="album-list">
+              <div class="album">
+                <img src="./images/Nevermind.jpg" alt="album Nevermind">
+              </div>
+              <div class="album">
+                <img src="./images/Nevermind.jpg" alt="album Nevermind">
+              </div>
+              <div class="album">
+                <img src="./images/Nevermind.jpg" alt="album Nevermind">
+              </div>
+              <div class="album">
+                <img src="./images/Nevermind.jpg" alt="album Nevermind">
+              </div>
+            </div>
+          </div>
+          <div class="tab-contents" id="deluxe">
+            <div class="album-list">
+              <div class="album">
+                <img src="./images/Nevermind.jpg" alt="album Nevermind">
+              </div>
+              <div class="album">
+                <img src="./images/Nevermind.jpg" alt="album Nevermind">
+              </div>
+              <div class="album">
+                <img src="./images/Nevermind.jpg" alt="album Nevermind">
+              </div>
+              <div class="album">
+                <img src="./images/Nevermind.jpg" alt="album Nevermind">
+              </div>
+            </div>
+          </div>
+          <div class="tab-contents" id="remastered">
+            <div class="album-list">
+              <div class="album">
+                <img src="./images/single.jpg" alt="album Nevermind">
+              </div>
+              <div class="album">
+                <img src="./images/Nevermind.jpg" alt="album Nevermind">
+              </div>
+              <div class="album">
+                <img src="./images/Nevermind.jpg" alt="album Nevermind">
+              </div>
+              <div class="album">
+                <img src="./images/Nevermind.jpg" alt="album Nevermind">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vidéos -->
+  <!-- <div id="videos">
+    <div class="container">
+      <h1 class="sub-title">Vidéo</h1>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <video width="320" height="240" controls class="video-center">
+              <source src="./videos/Nirvana - Smells Like Teen Spirit (Official Music Video).mp4" type=video/mp4>
+            </video>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <video width="320" height="240" controls>
+              <source src="./videos/Nirvana - Something In The Way (Audio).mp4" type=video/mp4>
+            </video>
+          </div>
+          <div class="carousel-item">
+            <video width="320" height="240" controls>
+              <source src="./videos/Nirvana - Come As You Are (Official Music Video).mp4" type=video/mp4>
+            </video>
+          </div>
+          <div class="carousel-item">
+            <video width="320" height="240" controls>
+              <source src="./videos/Nirvana - Heart-Shaped Box (Official Music Video).mp4" type=video/mp4>
+            </video>
+          </div>
+          <div class="carousel-item">
+            <video width="320" height="240" controls>
+              <source src="./videos/Nirvana - In Bloom (Official Music Video).mp4" type=video/mp4>
+            </video>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div> -->
+
+
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>
+      La Manu Le Havre&copy;
+    </p>
+  </div>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script> -->
+  <script src="https://kit.fontawesome.com/c678cc6681.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
